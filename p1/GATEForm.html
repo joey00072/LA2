@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GATEForm</title>
+    <style>
+        #conf-form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+        }
+        body{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 40vh;
+            width: 90vw;
+        }
+        label{
+            align-self: flex-start;
+        }
+    </style>
+</head>
+<body>
+
+    <form id="conf-form" action="./submit" method="POST">
+        <h1>GATE Registration Form</h1>
+        <label for="name">Name</label>
+        <input id="name" type="text" name="Name"> 
+        <label for="city">City</label>
+        <input id="city" type="text" name="City">
+        <label for="branch">Branch</label>
+        <input id="branch" type="text" name="Branch">
+        <label for="date">date</label>
+        <input id="date" type="date" name="date">
+        <input type="submit" value="Submit">  
+    </form> 
+</body>
+</html>
